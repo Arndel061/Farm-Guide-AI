@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FarmGuard AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌿 FarmGuard AI</h1>
+    <p>Upload a photo of your crop and get a diagnosis + local remedy.</p>
+
+    <input type="file" id="imageUpload" accept="image/*" />
+    <img id="preview" src="" alt="Image Preview" />
+
+    <button onclick="analyzeImage()">Analyze</button>
+
+    <div id="resultBox">
+      <h2>Diagnosis Result</h2>
+      <p id="diagnosis">Disease: --</p>
+      <p id="remedy">Remedy: --</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
